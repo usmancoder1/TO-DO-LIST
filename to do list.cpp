@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-// Node structure
 struct Task {
     int id;
     string title;
@@ -17,7 +15,7 @@ public:
         start = NULL;
     }
 
-    // Insert a new task
+  
     void insertTask() {
         Task* temp = new Task;
         cout << "Enter Task ID: ";
@@ -40,7 +38,7 @@ public:
         cout << "Task inserted successfully.\n";
     }
 
-    // Display all tasks
+    
     void displayTasks() {
         if (start == NULL) {
             cout << "No tasks available.\n";
@@ -55,7 +53,7 @@ public:
         }
     }
 
-    // Update a task
+    
     void updateTask() {
         if (start == NULL) {
             cout << "List is empty.\n";
@@ -80,7 +78,7 @@ public:
         cout << "Task not found.\n";
     }
 
-    // Delete a task
+    
     void deleteTask() {
         if (start == NULL) {
             cout << "List is empty.\n";
@@ -152,4 +150,5 @@ int main() {
 
     return 0;
 }
+
 
